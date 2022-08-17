@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/k_k_khunt" target="blank"><img src="https://img.shields.io/twitter/follow/k_k_khunt?logo=twitter&style=for-the-badge" alt="k_k_khunt" /></a> </p>
 
-- 👨‍💻 All of my projects are available at [github.com/khuntkaran](github.com/khuntkaran)
+- 👨‍💻 All of my projects are available at [github.com/khuntkaran](https://github.com/khuntkaran)
 
 - 📫 How to reach me **khuntkaran995@gmail.com**
 
