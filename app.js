@@ -18,12 +18,13 @@ mongoose.connect(process.env.DATABASE)
     app.use(express.json());
     app.use(express.urlencoded({extended:false}));
     app.use(cookieParser());
-
-    app.use(express.static("../client/build"));
-    app.use('/login',express.static("../client/build"));
-    app.use('/register',express.static("../client/build"));
-    app.use('/login/*',express.static("../client/build"));
-
+    
+    app.use(express.static("client/build"));
+    app.use('/login',express.static("client/build"));
+    app.use('/register',express.static("client/build"));
+    app.use('/login/*',express.static("client/build"));
+    
+    
     app.get('/authenticate',authenticate,(req,res)=>{
         res.status(200).send(req.rootUser);
     })
@@ -102,12 +103,12 @@ mongoose.connect(process.env.DATABASE)
     })
 
     if(process.env.NODE_ENV=="production"){
-        app.use(express.static("../client/build"));
-        app.use('/login',express.static("../client/build"));
-        app.use('/register',express.static("../client/build"));
-        app.use('/login/*',express.static("../client/build"));
+        app.use(express.static("client/build"));
+        app.use('/login',express.static("client/build"));
+        app.use('/register',express.static("client/build"));
+        app.use('/login/*',express.static("client/build"));
     }
-    const port = process.env.PORT ||3003;
+    const port = process.env.PORT ||3002;
     app.listen(port,()=>{});
 })
 .catch((e)=>{
